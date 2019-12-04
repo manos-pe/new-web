@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+}
+
+button.btn{
+    border-radius: 100px;
+}
+
+button.btn-primary{
+    color: #ffffff;
+    background-color:#1BBFC7;
+    border-width: 3px;
+    border-color: #1BBFC7;
+}
+
+img.scale{
+    transition: transform .2s;
+}
+
+img.scale:hover{
+    transform: scale(1.05);
+}
+
+button.btn-primary:hover{
+    background-color: #1BBFC7;
+}
+
+
+button.btn-outline-primary{
+    background-color: #ffffff;
+    border-color: #1BBFC7;
+    border-width: 3px;
+    color: #1BBFC7;
+}
+
+button.btn-outline-primary:hover{
+    color: #ffffff;
+    background-color:#1BBFC7;
+    border-color: #1BBFC7;
+    text-decoration: none;
+}
+
+a.no-underline:hover{
+    text-decoration: none !important;
+}
+
+button.btn-outline-secondary{
+    border-radius: 100px;
+    border-width: 3px;
+}
+
+i.fa-secondary{
+    color: #666666;
+    transition: transform .2s;
+}
+
+i.fa-secondary:hover{
+    color: #4D4D4D;
+    transform: scale(1.05);
+}
+
+i.fa-primary{
+    color: #1BBFC7;
+    transition: transform .2s;
+}
+
+i.fa-primary:hover{
+    color: #1BBFC7;
+    transform: scale(1.05);
+}
+
+input.form-control{
+    border-color: #666666;
+}
+
+select.custom-select{
+    border-color: #666666;
+}
+
+a.secondary{
+    color: #3D3D3D !important;
+}
+
+.list-group-item-lg > a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-group-item-lg > span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+span.badge{
+    background-color: #1BBFC7;
+}
+
+h2.text-secondary{
+    color: #274A60 !important;
+}
+
+.text-dark{
+    color: #575757;
+}
+
+a.badge{
+    color: #3D3D3D;
+}
+
+a.badge:hover{
+    color: #1BBFC7;
+}
+
+a.badge-primary{
+    color: #ffffff;
+    background-color: #1BBFC7;
+}
+
+a.badge-primary:hover{
+    background-color: #1BBFC7 !important;
+}
+
+i.secondary{
+    color: #666666;
+}
+
+div.card{
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #666666;
+}
+
+a.text-primary > h4{
+    color:#1BBFC7;
+}
+
+h4:hover{
+    color: white;
+}
+
+div.category{
+    border-radius: 25px;
+    width: 155px;
+}
+
+div.progress{
+    border-radius: 25px;
+}
+
+div.bg-primary{
+    background-color: #1BBFC7 !important;
+    color: #1BBFC7;
+    border-radius: 25px;
+
+}
+
+select.form-control{
+    border-color: #666666;
+}
+
+.fade-in{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
