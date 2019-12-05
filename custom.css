@@ -38,6 +38,7 @@ button.btn-outline-primary{
     border-color: #1BBFC7;
     border-width: 3px;
     color: #1BBFC7;
+    font-weight: bold;
 }
 
 button.btn-outline-primary:hover{
@@ -106,10 +107,13 @@ h2.text-secondary{
     color: #274A60 !important;
 }
 
-.text-dark{
-    color: #575757;
+h5.text-dark{
+    color: #575757 !important;
 }
 
+strong.text-dark{
+    color: #575757 !important;
+}
 a.badge{
     color: #3D3D3D;
 }
@@ -138,6 +142,10 @@ div.card{
 }
 
 a.text-primary > h4{
+    color:#1BBFC7;
+}
+
+strong.text-primary{
     color:#1BBFC7;
 }
 
@@ -200,4 +208,25 @@ select.form-control{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+a.nav-link{
+    font-weight: bold;
+}
+
+img.float{
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
