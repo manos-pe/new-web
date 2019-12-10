@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 body{
@@ -18,6 +19,7 @@ button.btn-primary{
     background-color:#1BBFC7;
     border-width: 3px;
     border-color: #1BBFC7;
+    font-weight: bold;
 }
 
 img.scale{
@@ -29,7 +31,7 @@ img.scale:hover{
 }
 
 button.btn-primary:hover{
-    background-color: #1BBFC7;
+    background-color: #5CCAD0;
 }
 
 
@@ -107,11 +109,15 @@ h2.text-secondary{
     color: #274A60 !important;
 }
 
-h5.text-dark{
+h5.text-dark, h4.text-dark, h3.text-dark{
     color: #575757 !important;
 }
 
 strong.text-dark{
+    color: #575757 !important;
+}
+
+p.text-dark{
     color: #575757 !important;
 }
 a.badge{
@@ -146,7 +152,7 @@ a.text-primary > h4{
 }
 
 strong.text-primary{
-    color:#1BBFC7;
+    color:#1BBFC7 !important;
 }
 
 h4:hover{
@@ -229,4 +235,12 @@ img.float{
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-medium{
+    font-weight: 500;
 }
