@@ -27,7 +27,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg px-4">
         <div class="container mx-auto" style="max-width:1080px">
             <a class="navbar-brand" href="#">
                 <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_logo.svg" alt="" height="40">
@@ -37,7 +37,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active my-auto">
                         <a class="nav-link text-secondary" href="index.html">INICIO</a>
                     </li>
@@ -61,52 +61,78 @@
         </div>
     </nav>
 
-    <section class="mx-auto w-100">
+    <section class="mx-auto w-100 px-2">
         <div class="row mx-auto" style="max-width: 1080px;">
-            <div class="col-5 my-auto">
+            <div class="col-12 col-sm-5 col-md-4 my-auto">
                 <h2 class="text-secondary">
                     <strong>Contrata un servicio para tu casa desde S/ 11.25 por hora.</strong>
                 </h2>
-                <h5 class="text-dark mt-4" style="font-weight: 600;">
+                <h5 class="text-dark text-bold mt-4">
                     Olvídate de las tareas del hogar. Nosotros te hacemos la vida más fácil.
                 </h5>
+                <div class="text-center mt-4">
+                    <a href="#">
+                        <button class="btn btn-lg btn-primary w-50">Reservar</button>
+                    </a>
+                </div>
+                <div class="text-center mt-4">
+                    <img class="d-inline" src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/whatsapp.svg" alt=""
+                        height="50">
+                    <h4 class="d-inline text-dark text-bold ml-2">+51 923 468 905</h4>
+                </div>
             </div>
-            <div class="col-7">
-                <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/home+illustration.svg" alt="">
-                <img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
+            <div class="col-12 col-sm-7 col-md-8 text-center">
+                <!--<img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/home+illustration.svg" alt="">-->
+                <img class="w-100 mt-4 mb-4"
+                    src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/landing_illustration.svg" alt="">
+                <!--<img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
                     style="opacity: 0.075; position:absolute; top:10px; left:40px; width:200px;">
                 <img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
-                    style="opacity: 0.075; position:absolute; top:270px; left:0px; width:300px;">
+                    style="opacity: 0.075; position:absolute; top:270px; left:0px; width:300px;">-->
             </div>
         </div>
 
     </section>
 
-    <section class="mx-auto w-100 mt-4" style="background-color: #F7F7F7;">
-        <h3 class="text-center">
+    <section class="mx-auto w-100 mt-4 px-2" style="background-color: #F7F7F7;">
+        <h3 class="text-center pt-4">
             <strong class="text-dark">¿QUÉ ES</strong><strong class="text-primary"> MANOS?</strong>
         </h3>
         <div class="row mx-auto" style="max-width: 1080px;">
-            <div class="col-6">
+            <div class="col-12 col-sm-6 my-auto">
                 <div class="row text-center">
-                    <div class="col-6">
-                        <h5>Limpieza</h5>
+                    <div class="col-3 col-sm-6 my-3">
+                        <h5 class="d-sm-block d-none text-dark text-bold">Limpieza</h5>
+                        <p class="d-block d-sm-none text-bold text-dark">Limpieza</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/cleaning_illustration.svg"
-                            alt="" height="150">
+                            alt="" class="w-50">
                     </div>
-                    <div class="col-6">
-                        <h5>Planchado</h5>
+                    <div class="col-3 col-sm-6 my-3">
+                        <h5 class="d-sm-block d-none text-dark text-bold">Planchado</h5>
+                        <p class="d-block d-sm-none text-bold text-dark">Planchado</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/ironing_illustration.svg"
-                            alt="" height="150">
+                            alt="" class="w-50">
                     </div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
+                    <div class="col-3 col-sm-6 my-3">
+                        <h5 class="d-sm-block d-none text-dark text-bold">Lavado</h5>
+                        <p class="d-block d-sm-none text-bold text-dark">Lavado</p>
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/washing_illustration.svg"
+                            alt="" class="w-50">
+                    </div>
+                    <div class="col-3 col-sm-6 my-3">
+                        <h5 class="d-sm-block d-none text-dark text-bold">Cocina</h5>
+                        <p class="d-block d-sm-none text-bold text-dark">Cocina</p>
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/cooking_illustration.svg"
+                            alt="" class="w-50">
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <p>Manos es una plataforma que conecta Manos (profesionales de limpieza y tareas para el hogar) con
+            <div class="col-12 col-sm-6 my-auto">
+                <p class="text-dark text-medium">Manos es una plataforma que conecta Manos (profesionales de limpieza y
+                    tareas para el hogar) con
                     hogares que valoren su tiempo libre.</p>
-                <p>¡Queremos que te desocupes de las tareas del hogar y aproveches tu tiempo libre en lo que más
+                <p class="text-dark text-medium">¡Queremos que te desocupes de las tareas del hogar y aproveches tu
+                    tiempo libre en lo que más
                     quieras!</p>
             </div>
         </div>
