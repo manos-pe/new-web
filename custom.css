@@ -10,6 +10,10 @@ body{
     padding-right: constant(safe-area-inset-right);
 }
 
+p{
+    line-height: 1.7;
+}
+
 button.btn{
     border-radius: 100px;
 }
@@ -31,7 +35,8 @@ img.scale:hover{
 }
 
 button.btn-primary:hover{
-    background-color: #5CCAD0;
+    background-color: #21B6BE;
+    border-color: #21B6BE;
 }
 
 
@@ -105,7 +110,7 @@ span.badge{
     background-color: #1BBFC7;
 }
 
-h2.text-secondary{
+h1.text-secondary, h2.text-secondary, h3.text-secondary, h4.text-secondary, h5.text-secondary{
     color: #274A60 !important;
 }
 
