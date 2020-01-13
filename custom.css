@@ -159,6 +159,14 @@ div.card{
     box-shadow: 0px 0px 10px #666666;
 }
 
+nav.navbar-light{
+    
+}
+
+i.text-primary{
+    color:#1BBFC7 !important;
+}
+
 
 a.text-primary{
     color:#1BBFC7 !important;
