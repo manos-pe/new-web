@@ -211,8 +211,12 @@
                         class="w-100 p-5 zoom">
                 </div>
                 <h4 class="text-secondary text-center mt-3">¿Dónde?</h4>
-                <p class="text-dark mt-3 mb-4 text-justify px-3">¿En qué distrito queda tu casa, oficina o departamento?
-                </p class=>
+                <p class="text-dark mt-3 mb-4 text-justify px-3">
+                    ¿En qué distrito queda tu casa, oficina o departamento?
+                    <a class="text-primary text-bold" href="" data-toggle="modal" data-target="#AvailableDistricts">
+                        Comprueba nuestros distritos disponibles aquí.
+                    </a>
+                </p>
             </div>
             <div class="col-12 col-sm-6 col-md-4 mx-auto">
                 <div class="container p-0"
@@ -221,10 +225,9 @@
                         class="w-100 p-5 zoom">
                 </div>
                 <h4 class="text-secondary text-center mt-3">¿Cuándo?</h4>
-                <p class="text-dark mt-3 mb-4 text-justify px-3">¿Con qué frecuencia nos necesitas? ¿En qué horario?
-                    ¿Qué
-                    dias de la
-                    semana?
+                <p class="text-dark mt-3 mb-4 text-justify px-3">
+                    ¿Con qué frecuencia nos necesitas? ¿En qué horario?
+                    ¿Qué dias de la semana?
                 </p>
             </div>
             <div class="col-12 col-sm-6 col-md-4 mx-auto">
@@ -234,16 +237,50 @@
                         class="w-100 p-5 zoom">
                 </div>
                 <h4 class="text-secondary text-center mt-3">¿Cómo?</h4>
-                <p class="text-dark mt-3 mb-4 text-justify px-3">¿Necesitas planchado y/o lavado de ropa? ¿Necesitas
-                    alguien
-                    que cocine?
-                    Dinos
-                    qué
-                    necesitas y te
-                    ayudamos.</p>
+                <p class="text-dark mt-3 mb-4 text-justify px-3">
+                    ¿Necesitas planchado y/o lavado de ropa? ¿Necesitas
+                    alguien que cocine? Dinos qué necesitas y te ayudamos.
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- Available districts modal -->
+    <div class="modal fade" id="AvailableDistricts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-dark" style="border-color: #1BBFC7; border-radius: 15px; border-width: 5px;">
+                <div class="modal-body" style="background-color: white; border-radius: 15px;">
+                    <!-- Close modal button -->
+                    <button type="button" class="close mt-1 mr-1" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button><br>
+                    <!-- Modal title -->
+                    <h4 class="mt-2 text-center text-dark">
+                        Estamos disponibles en los siguientes distritos
+                    </h4>
+                    <!-- Content-->
+                    <div class="row w-100 mx-auto mt-3 mb-3">
+                        <div class="col-12 col-md-7 col-lg-6 my-auto mx-auto mt-0 mb-0">
+                            <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+                                <li>Lima</li>
+                                <li>San Miguel</li>
+                                <li>Surco</li>
+                                <li>Miraflores</li>
+                                <li>San Borja</li>
+                                <li>La Molina</li>
+                                <li>Jesus María</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-6 my-auto mx-auto text-center mt-0 mb-0">
+                            <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/location.svg" alt=""
+                                class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Why use it Section -->
     <section class="mx-auto w-100 px-3 pt-5 pb-5" style="background-color: #F7F7F7;">
