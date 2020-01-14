@@ -48,22 +48,23 @@
                 <i class="fas fa-bars text-primary"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item active my-auto">
-                        <a class="nav-link text-secondary" href="index.html">INICIO</a>
+                        <a class="nav-link text-secondary mx-2" href="index.html">INICIO</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link text-secondary" href="servicios.html">SERVICIOS</a>
+                        <a class="nav-link text-secondary mx-2" href="servicios.html">SERVICIOS</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link text-secondary" href="seguridad.html">SEGURIDAD</a>
+                        <a class="nav-link text-secondary mx-2" href="seguridad.html">SEGURIDAD</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link text-secondary" href="seguridad.html">COMPROMISO</a>
+                        <a class="nav-link text-secondary mx-2" href="seguridad.html">COMPROMISO</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link" href="entrar.html">
-                            <button class="btn btn-lg btn-outline-primary w-100" style="min-width: 150px;">Mi
+                        <a class="nav-link mx-2" href="entrar.html">
+                            <button class="btn btn-lg btn-outline-primary w-100"
+                                style="min-width: 150px; max-width: 200px;">Mi
                                 cuenta</button>
                         </a>
                     </li>
@@ -72,33 +73,42 @@
         </div>
     </nav>
 
-    <section class="mx-auto w-100 px-2 mt-3">
+    <section class="mx-auto w-100 px-2 pt-4 pb-4">
         <div class="row mx-auto" style="max-width: 1080px;">
             <div class="col-12 col-md-5 col-lg-4 my-auto">
                 <!-- For md screen or larger -->
-                <h3 class="text-secondary d-none d-md-block">
+                <h3 class="text-secondary d-none d-md-block" style="line-height: 1.4;">
                     <strong>Contrata un servicio para tu casa desde<br>S/ 11.25 por hora.</strong>
                 </h3>
                 <!-- For xs and sm screen -->
                 <h4 class="text-secondary d-block d-md-none text-center" style="line-height: 1.4;">
                     <strong>Contrata un servicio para tu casa desde S/ 11.25 por hora.</strong>
                 </h4>
+                <!-- For md screen or larger -->
                 <h5 class="text-dark mt-4 d-none d-md-block" style="line-height: 1.4;">
                     Olvídate de las tareas del hogar.<br>Nosotros te hacemos la vida más fácil.
                 </h5>
+                <!-- For xs and sm screen -->
                 <h5 class="text-dark mt-4 d-block d-md-none text-center" style="line-height: 1.4;">
                     Olvídate de las tareas del hogar.<br>Nosotros te hacemos la vida más fácil.
                 </h5>
                 <div class="text-center mt-4">
-                    <button class="btn btn-lg btn-primary w-50" style="min-width: 200px;">Reservar</button>
+                    <button class="btn btn-lg btn-primary w-75"
+                        style="min-width: 200px; max-width: 250px;">Reservar</button>
                 </div>
-                <div class="text-center mt-4 mb-4">
-                    <img class="d-inline" src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/whatsapp.svg" alt=""
-                        height="45">
-                    <h4 class="d-inline text-dark text-bold ml-2">+51 923 468 905</h4>
+                <!-- Whatsapp contact info -->
+                <div class="d-flex text-center mt-4 mb-4 justify-content-center">
+                    <!-- Whatsapp icon -->
+                    <div class="align-self-start">
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/whatsapp.svg" alt="" height="45">
+                    </div>
+                    <!-- Whatsapp number -->
+                    <div class="align-self-end">
+                        <h4 class="text-dark text-bold ml-2">+51 923 468 905</h4>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-7 col-lg-8 text-center">
+            <div class="col-12 col-md-7 col-lg-8 text-center my-auto">
                 <!-- First illustration -->
                 <!--<img class="w-100 mt-4 mb-4"
                     src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/landing_illustration.svg" alt="">-->
@@ -106,11 +116,11 @@
                 <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/home+illustration.svg" alt=""
                     class="w-75">
                 <img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
-                    style="opacity: 0.1; position:absolute; bottom:50px; left:40px; width:250px;">
+                    style="opacity: 0.1; position:absolute; bottom:50px; left:40px; width: 45%; max-width:250px;">
                 <img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
-                    style="opacity: 0.09; position:absolute; top:10px; right:15px; width:200px;">
+                    style="opacity: 0.09; position:absolute; top:10px; right:15px; width: 30%; max-width:200px;">
                 <img class="float" src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/circle.svg" alt=""
-                    style="opacity: 0.09; position:absolute; bottom: 10px; right:100px; width:175px;">
+                    style="opacity: 0.09; position:absolute; bottom: 10px; right:100px; width: 20%; max-width:175px;">
             </div>
         </div>
 
@@ -154,24 +164,25 @@
                     tiempo libre en lo que más
                     quieras!</p>
             </div>
+            <!-- Illustrations for sm and xs screens -->
             <div class="col-12 col-sm-6 my-auto d-block d-sm-none">
-                <div class="row text-center pb-3">
-                    <div class="col-6 my-3">
+                <div class="row text-center">
+                    <div class="col-6 my-2">
                         <p class="d-block d-sm-none text-bold text-dark">Limpieza</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/cleaning_illustration.svg"
                             alt="" class="w-50">
                     </div>
-                    <div class="col-6 my-3">
+                    <div class="col-6 my-2">
                         <p class="d-block d-sm-none text-bold text-dark">Planchado</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/ironing_illustration.svg"
                             alt="" class="w-50">
                     </div>
-                    <div class="col-6 my-3">
+                    <div class="col-6 my-2">
                         <p class="d-block d-sm-none text-bold text-dark">Lavado</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/washing_illustration.svg"
                             alt="" class="w-50">
                     </div>
-                    <div class="col-6 my-3">
+                    <div class="col-6 my-2">
                         <p class="d-block d-sm-none text-bold text-dark">Cocina</p>
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/cooking_illustration.svg"
                             alt="" class="w-50">
@@ -237,56 +248,104 @@
                     asegura que todo salga como esperas.
                 </p>
             </div>
-            <div class="col-11 col-md-5 mx-auto mt-3 mb-3"
+
+            <!-- Content Box -->
+            <div class="col-11 col-md-5 mx-auto mt-3 mb-3 pb-2"
                 style="background-color: white; box-shadow: 0px 0px 10px #cccc">
-                <h4 class="text-center text-dark mt-3">Con Manos</h4>
-                <div class="row mx-auto mt-3">
-                    <div class="col-1">
+                <!-- Title -->
+                <h4 class="text-center text-dark mt-3 mb-3">Con Manos</h4>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-star text-warning"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Seleccionamos el mejor talento bajo altos estándares de calidad.</p>
                     </div>
-                    <div class="col-1">
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-star text-warning"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Te damos garantías de calidad en cada limpieza.</p>
                     </div>
-                    <div class="col-1">
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-star text-warning"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Te damos la opción de cambiar de personal si no deseas mantenerlo.</p>
                     </div>
-                    <div class="col-1">
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-star text-warning"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Damos atención al cliente de lunes a domingo.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-11 col-md-5 mx-auto mt-3 mb-3"
+
+            <!-- Content Box -->
+            <div class="col-11 col-md-5 mx-auto mt-3 mb-3 pb-2"
                 style="background-color: white; box-shadow: 0px 0px 10px #cccc">
-                <h4 class="text-center text-dark mt-3">Sin Manos</h4>
-                <div class="row mx-auto mt-3">
-                    <div class="col-1">
+                <!-- Title -->
+                <h4 class="text-center text-dark mt-3 mb-3">Sin Manos</h4>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-minus-circle text-dark"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Tú debes buscar referencias y hacer la selección.</p>
                     </div>
-                    <div class="col-1">
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-minus-circle text-dark"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
+                        <p class="text-dark">Tú debes buscar referencias y hacer la selección.</p>
+                    </div>
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
+                        <i class="fas fa-minus-circle text-dark"></i>
+                    </div>
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">No tienes a quien llamar si algo sale mal.</p>
                     </div>
-                    <div class="col-1">
+                </div>
+                <!-- List item -->
+                <div class="d-flex px-2">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
                         <i class="fas fa-minus-circle text-dark"></i>
                     </div>
-                    <div class="col-11">
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
                         <p class="text-dark">Si quieres cambiar de personal, demorarás en buscar un reemplazo.</p>
                     </div>
                 </div>
