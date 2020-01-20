@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <!--<link rel="shortcut icon" type="image/png" href="#" />
+    <link rel="apple-touch-icon" sizes="128x128" href="#">
+    <link rel="icon" sizes="192x192" href="#">-->
+    <link rel="stylesheet" href="../custom.css" />
+    <title>Manos | Empleadas domésticas por días para hogares y oficinas en Lima</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_icono.ico">
+    <!-- Favicon for Apple devices -->
+    <link rel="apple-touch-icon"
+        href="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_apple_touch_icon80px.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_apple_touch_icon152px.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_apple_touch_icon180px.png">
+    <link rel="apple-touch-icon" sizes="167x167"
+        href="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_apple_touch_icon167px.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="text-center">
+        <a href="../index.html">
+            <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_logo.svg" alt="" style="height: 50px;"
+                class="mt-4 mb-4">
+        </a>
+
+        <div class="progress" style="height:3px; box-shadow: 0px 2px 5px #bbb;">
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#C9C9C9;"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            </div>
+        </div>
+    </header>
+
+    <div class="row mx-auto px-3" style="max-width: 1000px;">
+
+        <!-- Sign up section-->
+        <div class="col-12 col-sm-7 col-md-8 container w-100 mx-auto mt-4 px-4" style="max-width: 450px;">
+            <h5 class="text-center text-secondary">
+                <strong>Inicia sesión en Manos</strong>
+            </h5>
+
+            <!-- Sign in Form -->
+            <form class="form mx-auto w-100 mt-4" role="form" autocomplete="off" id="signinForm" novalidate=""
+                method="POST">
+
+                <!-- Email input -->
+                <input type="email" class="form-control" name="email" id="email" required
+                    placeholder="Correo electrónico" oninvalid="this.setCustomValidity('Ingresa tu correo electrónico')"
+                    oninput="this.setCustomValidity('')" />
+
+                <!-- Password input -->
+                <input type="password" class="form-control mt-3" name="password" id="password" required
+                    placeholder="Contraseña" oninvalid="this.setCustomValidity('Ingresa tu correo electrónico')"
+                    oninput="this.setCustomValidity('')" />
+
+                <!-- Form submit button -->
+                <button class="btn btn-lg btn-primary mt-4 btn-block w-75 mx-auto" href="sign_in.html">
+                    <strong class="text-light">Iniciar sesión</strong>
+                </button>
+            </form>
+
+            <!-- Enlace para recuperar contraseña-->
+            <h5 class="text-center mt-4 mb-4">
+                <strong><a href="login.html" class="text-primary">¿Has olvidado tu contraseña?</a></strong>
+            </h5>
+
+            <!-- Separador -->
+            <div class="progress" style="height:3px;">
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#C9C9C9;"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+
+            <!-- Enlace para registro -->
+            <h5 class="text-center mt-4 mb-4 text-dark">
+                <strong>¿No tienes cuenta?</strong>
+            </h5>
+            <a href="sign_up.html">
+                <button class="btn btn-lg btn-outline-dark mt-4 mb-4 btn-block w-75 mx-auto">
+                    <strong>Regístrate</strong>
+                </button>
+            </a>
+        </div>
+
+        <!-- Illustration -->
+        <div class="col-sm-5 col-md-4 mx-auto d-none d-sm-block">
+            <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/welcome.svg" alt=""
+                style="max-height: 75vh" class="mt-5">
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
