@@ -61,8 +61,19 @@ a.no-underline:hover{
 }
 
 button.btn-outline-secondary{
-    border-radius: 100px;
     border-width: 3px;
+}
+
+button.btn-outline-dark{
+    border-width: 3px;
+    border-color: #575757;
+    background-color: white;
+    color: #575757;
+}
+
+button.btn-outline-dark:hover{
+    border-color: #575757;
+    background-color: #575757;
 }
 
 i.fa-secondary{
