@@ -27,39 +27,111 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="seguridad.html">Seguridad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="entrar.html">Mi cuenta</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light px-4">
+        <div class="container mx-auto" style="max-width:1000px">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_logo.svg" alt="" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active my-auto">
+                        <a class="nav-link text-secondary mx-2" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-secondary mx-2" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-secondary mx-2" href="seguridad.html">SEGURIDAD</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-secondary mx-2" href="seguridad.html">COMPROMISO</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link mx-2" href="client/sign_in.html">
+                            <button class="btn btn-lg btn-outline-primary w-100"
+                                style="min-width: 150px; max-width: 200px;">
+                                Mi cuenta
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="px-3 mx-auto" style="max-width: 1000px;">
-        <div class="row pt-2 mx-auto">
-            <div class="col-6 col-md-6 col-lg-5 text-center shadow m-0">
+    <section class="mx-auto w-100 px-3 pt-5 pb-5" style="background-color: #FFFFFF;">
+        <h3 class="text-center">
+            <strong class="text-dark">¿QUÉ SERVICIOS</strong><strong class="text-primary"> OFRECEMOS?</strong>
+        </h3>
+        <div class="row mx-auto mt-3" style="max-width: 1000px;">
+            <!-- Content Box -->
+            <div class="col-11 col-md-5 mx-auto mx-3 pb-2 text-center"
+                style="background-color: white; box-shadow: 0px 0px 10px #cccc">
+                <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/suscription.svg" alt=""
+                    height="175" class="m-4">
+                <h4 class="text-primary text-center">Plan de limpieza</h4>
+                <h5 class="text-center text-dark mt-3">Desde <strong>S/ 8.75</strong> por hora</h5>
+
+                <!-- List item -->
+                <div class="d-flex px-2 mt-3">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
+                        <p class="text-dark text-left">Pagas un precio menor respecto a limpiezas únicas.</p>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <button class="btn btn-lg btn-primary mt-2 mb-4 btn-block w-75 mx-auto" href="sign_in.html">
+                    Ver planes
+                </button>
+
+            </div>
+            <!-- Content Box -->
+            <div class="col-11 col-md-5 mx-auto mx-3 pb-2 text-center"
+                style="background-color: white; box-shadow: 0px 0px 10px #cccc">
+                <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/one_time.svg" alt="" height="175"
+                    class="m-4">
+                <h4 class="text-primary text-center">Limpieza única</h4>
+                <h5 class="text-center text-dark mt-3">Desde <strong>S/ 11.25</strong> por hora</h5>
+
+                <!-- List item -->
+                <div class="d-flex px-2 mt-3">
+                    <!-- Bullet point icon -->
+                    <div class="px-2 align-self-start">
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <!-- Text -->
+                    <div class="px-2 align-self-end">
+                        <p class="text-dark text-left">Ideal para una emergencia o cuando necesites un reemplazo.</p>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <button class="btn btn-lg btn-primary mt-2 mb-4 btn-block w-75 mx-auto" href="sign_in.html">
+                    Reservar
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 mx-auto mt-4" style="max-width: 1000px;">
+        <div class="row mx-auto">
+            <div class="col-md-5 col-lg-5 text-center m-0 border">
                 <div class="h-100 p-3">
-                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/bedroom.svg" class="w-75"
-                        style="max-width:250px; min-width: 175px;">
+                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/bedroom.svg" class="h-100"
+                        style="max-height:250px; min-height: 125px;">
                 </div>
             </div>
-            <div class="col-6 col-md-6 col-lg-7 m-0 shadow">
+            <div class="col-md-7 col-lg-7 m-0 border">
                 <div class="h-100 p-4 m-0">
                     <h5>Limpieza de habitaciones, sala, comedor y áreas comunes</h5>
                     <ul>
@@ -72,8 +144,8 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-2 m-auto">
-            <div class="col-md-8 col-lg-7 m-auto shadow">
+        <div class="row mx-auto">
+            <div class="col-md-8 col-lg-7 m-auto border">
                 <div class="h-100 p-4 m-0">
                     <h5>Limpieza de baños</h5>
                     <ul>
@@ -84,19 +156,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-5 m-auto text-center shadow">
-                <div class="h-100 p-3">
-                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/bathroom.svg" class="w-50">
+            <div class="col-md-4 col-lg-5 m-auto text-center border">
+                <div class="h-100">
+                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/bathroom.svg" class="h-100"
+                        style="max-height:250px; min-height: 125px;">
                 </div>
             </div>
         </div>
-        <div class="row pt-2 m-auto w-100">
-            <div class="col-md-4 col-lg-5 m-auto text-center shadow">
+        <div class="row mx-auto">
+            <div class="col-md-4 col-lg-5 m-auto text-center border">
                 <div class="h-100 p-3">
-                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/kitchen.svg" class="w-50">
+                    <img src="https://izi-app-others.s3-sa-east-1.amazonaws.com/kitchen.svg" class="h-100"
+                        style="max-height:250px; min-height: 125px;">
                 </div>
             </div>
-            <div class="col-md-8 col-lg-7 m-auto shadow h-100">
+            <div class="col-md-8 col-lg-7 m-auto border h-100">
                 <div class="h-100 p-4 m-0">
                     <h5>Limpieza de cocina</h5>
                     <ul>

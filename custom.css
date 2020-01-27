@@ -173,7 +173,7 @@ nav.navbar-light{
 
 }
 
-i.text-primary{
+i.text-primary, h4.text-primary, h5.text-primary, h3.text-primary{
     color:#1BBFC7 !important;
 }
 
