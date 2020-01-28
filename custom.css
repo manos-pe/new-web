@@ -173,6 +173,23 @@ nav.navbar-light{
 
 }
 
+label.btn-outline-primary{
+    box-shadow: 0px 0px 5px #bbbbbb;
+    border-width: 0px;
+    font-weight: 500;
+    color: #575757;
+}
+
+label.btn-outline-primary:hover{
+    background-color: #1BBFC7;
+    color: white;
+}
+
+label.active{
+    background-color: #1BBFC7 !important;
+    color: white !important;
+}
+
 i.text-primary, h4.text-primary, h5.text-primary, h3.text-primary{
     color:#1BBFC7 !important;
 }
@@ -190,8 +207,20 @@ a.text-primary > h4{
     color:#1BBFC7;
 }
 
+form > label{
+    font-weight: 500;
+}
+
+label.text-dark{
+    color: #575757 !important;
+}
+
 strong.text-primary{
     color:#1BBFC7 !important;
+}
+
+strong.text-secondary{
+    color:#274A60 !important;
 }
 
 h4:hover{
