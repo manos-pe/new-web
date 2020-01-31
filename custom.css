@@ -2,7 +2,7 @@
 
 *{
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 body{
@@ -58,6 +58,10 @@ button.btn-outline-primary:hover{
 
 a.no-underline:hover{
     text-decoration: none !important;
+}
+
+a.underline{
+    text-decoration: underline !important;
 }
 
 button.btn-outline-secondary{
