@@ -18,12 +18,12 @@ section.bg-light{
     background-color: #F3F5F7 !important;
 }
 
-button.btn{
+button.btn, input.btn, a.btn{
     border-radius: 10px;
     box-shadow: 0px 0px 7px #bbbbbb;
 }
 
-button.btn-primary{
+button.btn-primary, input.btn, a.btn{
     color: #ffffff;
     background-color:#1BBFC7;
     border-width: 3px;
@@ -39,13 +39,13 @@ img.scale:hover{
     transform: scale(1.05);
 }
 
-button.btn-primary:hover{
+button.btn-primary:hover, input.btn-primary:hover, a.btn-primary:hover{
     background-color: #21B6BE;
     border-color: #21B6BE;
 }
 
 
-button.btn-outline-primary{
+button.btn-outline-primary, input.btn-outline-primary, a.btn-outline-primary{
     background-color: #ffffff;
     border-color: #1BBFC7;
     border-width: 3px;
@@ -53,7 +53,7 @@ button.btn-outline-primary{
     font-weight: bold;
 }
 
-button.btn-outline-primary:hover{
+button.btn-outline-primary:hover, input.btn-outline-primary:hover, a.btn-outline-primary:hover{
     color: #ffffff;
     background-color:#1BBFC7;
     border-color: #1BBFC7;
@@ -68,18 +68,18 @@ a.underline{
     text-decoration: underline !important;
 }
 
-button.btn-outline-secondary{
+button.btn-outline-secondary, input.btn-outline-secondary, a.btn-outline-secondary{
     border-width: 3px;
 }
 
-button.btn-outline-dark{
+button.btn-outline-dark, input.btn-outline-dark, a.btn-outline-dark{
     border-width: 3px;
     border-color: #575757;
     background-color: white;
     color: #575757;
 }
 
-button.btn-outline-dark:hover{
+button.btn-outline-dark:hover, input.btn-outline-dark:hover, a.btn-outline-dark:hover{
     border-color: #575757;
     background-color: #575757;
 }
