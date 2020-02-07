@@ -37,6 +37,7 @@
 </head>
 
 <body>
+    <!-- Import jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
         (function ($) {
@@ -45,7 +46,7 @@
                 // hide .progress first
                 $(".progress").hide();
 
-                // fade in .navbar
+                // fade in .progress
                 $(function () {
                     $(window).scroll(function () {
 
@@ -63,16 +64,24 @@
         }(jQuery));  
     </script>
 
+    <!-- Navbar and progress bar container -->
     <div class="container fixed-top mx-0 px-0" style="width: 100%; max-width: 2000px;">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light px-4 bg-white">
             <div class="container mx-auto" style="max-width:1000px">
+
+                <!-- Company logo-->
                 <a class="navbar-brand mx-auto" href="#">
                     <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_logo.svg" alt="" height="40">
                 </a>
+
+                <!-- Custom toggler -->
                 <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     style="height: 22px; width: 42px; border-color: white; background: url(https://manos-web.s3-sa-east-1.amazonaws.com/icons/toggler.svg) no-repeat; background-size: cover; border-radius: 0;">
                 </button>
+
+                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item active my-auto">
@@ -99,6 +108,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Shadow effect for navbar on scroll down -->
         <div class="progress" style="height:2px; box-shadow: 0px 4px 6px #999; width:100%;">
             <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#fff;" aria-valuenow="100"
                 aria-valuemin="0" aria-valuemax="100">
@@ -106,8 +117,7 @@
         </div>
     </div>
 
-
-
+    <!-- Main section -->
     <section class="mx-auto w-100 px-2 pt-3 pb-4" style="margin-top: 80px;">
         <div class="row mx-auto" style="max-width: 1000px;">
             <div class="col-12 col-md-5 col-lg-4 my-auto">
@@ -127,6 +137,7 @@
                 <h5 class="text-dark mt-4 d-block d-md-none text-center" style="line-height: 1.4;">
                     Olvídate de las tareas del hogar.<br>Nosotros te hacemos la vida más fácil.
                 </h5>
+                <!-- Call to action button -->
                 <div class="text-center mt-4">
                     <button class="btn btn-lg btn-primary w-75"
                         style="min-width: 200px; max-width: 250px;">Reservar</button>
@@ -146,10 +157,6 @@
             </div>
             <!-- Illustration -->
             <div class="col-12 col-md-7 col-lg-8 text-center my-auto">
-                <!-- First illustration -->
-                <!--<img class="w-100 mt-4 mb-4"
-                    src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/landing_illustration.svg" alt="">-->
-                <!-- Second illustration -->
                 <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/home+illustration.svg" alt=""
                     class="w-75">
                 <!-- Floating circles -->
@@ -163,12 +170,16 @@
         </div>
     </section>
 
+    <!-- What is section -->
     <section class="mx-auto w-100 px-3 pt-5 pb-5 bg-light">
+        <!-- Title -->
         <h3 class="text-center">
             <strong class="text-dark">¿QUÉ ES</strong><strong class="text-primary"> MANOS?</strong>
         </h3>
+        <!-- Body -->
         <div class="row mx-auto mt-3" style="max-width: 1000px;">
             <div class="col-12 col-sm-6 my-auto d-sm-block d-none">
+                <!-- Illustrations group -->
                 <div class="row text-center">
                     <div class="col-3 col-sm-6 my-3">
                         <h5 class="d-sm-block d-none text-dark text-bold">Limpieza</h5>
@@ -192,6 +203,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Company information -->
             <div class="col-12 col-sm-6 my-auto">
                 <p class="text-dark text-medium pt-3 text-justify">
                     Manos es una plataforma que conecta Manos (profesionales de
@@ -203,7 +215,7 @@
                     tiempo libre en lo que más
                     quieras!</p>
             </div>
-            <!-- Illustrations for sm and xs screens -->
+            <!-- Illustration group for sm and xs screens -->
             <div class="col-12 col-sm-6 my-auto d-block d-sm-none">
                 <div class="row text-center">
                     <div class="col-6 my-2">
@@ -235,9 +247,11 @@
 
     <!-- How it works section -->
     <section class="mx-auto w-100 px-3 pt-5 pb-5" style="background-color: #ffffff;">
+        <!-- Title -->
         <h3 class="text-center">
             <strong class="text-dark">¿CÓMO</strong><strong class="text-primary"> FUNCIONA?</strong>
         </h3>
+        <!-- Body -->
         <div class="row mx-auto mt-4" style="max-width: 1000px;">
             <div class="col-12 col-sm-6 col-md-4 mx-auto">
                 <div class="container p-0"
@@ -295,8 +309,9 @@
                     <h4 class="mt-2 text-center text-secondary px-2">
                         Estamos disponibles en los siguientes distritos
                     </h4>
-                    <!-- Content-->
+                    <!-- Body -->
                     <div class="row w-100 mx-auto mt-4">
+                        <!-- Available districts list-->
                         <div class="col-12 col-sm-7 col-md-7 col-lg-6 my-auto mx-auto mt-0 mb-0">
                             <ul class="px-4" style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
                                 <li>Lima</li>
@@ -322,6 +337,7 @@
                                 <li>Jesus María</li>
                             </ul>
                         </div>
+                        <!-- Illustration-->
                         <div class="col-12 col-sm-5 col-md-5 col-lg-6 my-auto mx-auto text-center mt-0 mb-0 pl-0">
                             <img src="https://manos-web.s3-sa-east-1.amazonaws.com/illustrations/location.svg" alt=""
                                 class="w-100 p-2" style="max-height: 275px;">
@@ -332,6 +348,7 @@
         </div>
     </div>
 
+    <!-- Services section -->
     <section class="mx-auto w-100 px-3 pt-5 pb-5 bg-light" style="background-color: #FFFFFF;">
         <h3 class="text-center">
             <strong class="text-dark">¿QUÉ SERVICIOS</strong><strong class="text-primary"> OFRECEMOS?</strong>
@@ -622,8 +639,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
