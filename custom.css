@@ -321,6 +321,15 @@ img.float{
     font-weight: 500;
 }
 
+h5.text-white{
+    color: white !important;
+}
+
+div.bg-secondary{
+    background-color: #274A60 !important;
+    color: white;
+}
+
 img.zoom{
     transition: transform .2s;
 }
