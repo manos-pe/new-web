@@ -27,7 +27,87 @@
 
 <body>
 
-    <section class="px-3" style="margin-top: 100px; background-color: #2D556E;">
+    <!-- Import jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+
+                // hide .progress first
+                $(".progress").hide();
+
+                // fade in .progress
+                $(function () {
+                    $(window).scroll(function () {
+
+                        // set distance user needs to scroll before we start fadeIn
+                        if ($(this).scrollTop() > 50) {
+                            $('.progress').fadeIn();
+                        }
+                        else {
+                            $('.progress').fadeOut();
+                        }
+                    });
+                });
+
+            });
+        }(jQuery));  
+    </script>
+
+    <!-- Navbar and progress bar container -->
+    <div class="container fixed-top mx-0 px-0" style="width: 100%; max-width: 2000px;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 bg-white">
+            <div class="container mx-auto" style="max-width:1000px">
+
+                <!-- Company logo-->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/manos_logo.svg" alt="" height="40">
+                </a>
+
+                <!-- Custom toggler -->
+                <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    style="height: 22px; width: 42px; border-color: white; background: url(https://manos-web.s3-sa-east-1.amazonaws.com/icons/toggler.svg) no-repeat; background-size: cover; border-radius: 0;">
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active my-auto">
+                            <a class="nav-link text-secondary mx-2" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-secondary mx-2" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-secondary mx-2" href="seguridad.html">SEGURIDAD</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-secondary mx-2" href="seguridad.html">COMPROMISO</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link mx-2 no-underline" href="client/sign_in.html">
+                                <button class="btn btn-lg btn-outline-primary w-100"
+                                    style="min-width: 150px; max-width: 200px;">
+                                    Mi cuenta
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Shadow effect for navbar on scroll down -->
+        <div class="progress" style="height:2px; box-shadow: 0px 4px 6px #999; width:100%;">
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#fff;" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100">
+            </div>
+        </div>
+    </div>
+
+    <section class="px-3" style="margin-top: 80px; background-color: #2D556E;">
         <div class="row pb-5 pt-2 m-auto text-light" style="max-width:1000px;">
             <div class="col-md-6 col-lg-7 p-4">
                 <h2 class="mt-4" style="font-weight: 700; letter-spacing: 1px;">
@@ -143,5 +223,15 @@
             </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
 </body>
