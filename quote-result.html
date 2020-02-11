@@ -52,6 +52,20 @@
         </div>
     </header>
 
+    <!-- Script for copying input values to clipboard-->
+    <script type="text/javascript">
+        function copy_to_clipboard(id) {
+            //Receives id as string which is the id of the input
+
+            //Get the input element
+            var textBox = document.getElementById(id);
+            //Select input value
+            textBox.select();
+            //Copy input value to clipboard
+            document.execCommand("copy");
+        }
+    </script>
+
     <section class="mx-auto px-3 pt-4 fade-in" style="max-width: 1000px;">
 
         <!-- Title -->
@@ -341,19 +355,6 @@
                                             alt="Logo del BCP" style="height:20px;">
                                     </div>
                                 </a>
-                                <!-- Script for copying input values to clipboard-->
-                                <script type="text/javascript">
-                                    function copy_to_clipboard(id) {
-                                        //Receives id as string which is the id of the input
-
-                                        //Get the input element
-                                        var textBox = document.getElementById(id);
-                                        //Select input value
-                                        textBox.select();
-                                        //Copy input value to clipboard
-                                        document.execCommand("copy");
-                                    }
-                                </script>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
