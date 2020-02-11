@@ -60,7 +60,7 @@ button.btn-outline-primary:hover, input.btn-outline-primary:hover, a.btn-outline
     text-decoration: none;
 }
 
-a.no-underline:hover{
+a.no-underline:hover, h6.no-underline:hover, div.no-underline:hover{
     text-decoration: none !important;
 }
 
