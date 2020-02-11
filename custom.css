@@ -182,7 +182,7 @@ label.active{
     color: white !important;
 }
 
-i.text-primary, h4.text-primary, h5.text-primary, h3.text-primary, a.text-primary{
+i.text-primary, h4.text-primary, h5.text-primary, h3.text-primary, a.text-primary, h6.text-primary{
     color:#1BBFC7 !important;
 }
 
@@ -341,3 +341,15 @@ img.shake:hover{
       transform: translate3d(4px, 0, 0);
     }
 } 
+
+input.readonly{
+    border-width: 0px;
+    background-color: #F8F9FA !important;
+}
+
+button.readonly{
+    background-color: #F8F9FA;
+    background-repeat:no-repeat;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}

@@ -138,7 +138,7 @@
 
                     <!-- Button -->
                     <button class="btn btn-lg btn-primary mt-2 mb-2 btn-block w-50 mx-auto" href="sign_in.html"
-                        style="min-width: 150px;">
+                        style="min-width: 150px;" data-toggle="modal" data-target="#PurchasingInstructions">
                         Solicitar
                     </button>
 
@@ -215,7 +215,7 @@
 
                     <!-- Button -->
                     <button class="btn btn-lg btn-primary mt-2 mb-2 btn-block w-50 mx-auto" href="sign_in.html"
-                        style="min-width: 150px;">
+                        style="min-width: 150px;" data-toggle="modal" data-target="#PurchasingInstructions">
                         Solicitar
                     </button>
 
@@ -292,14 +292,156 @@
                     </div>
 
                     <!-- Button -->
-                    <button class="btn btn-lg btn-primary mt-2 mb-2 btn-block w-50 mx-auto" href="sign_in.html"
-                        style="min-width: 150px;">
+                    <button class="btn btn-lg btn-primary mt-2 mb-2 btn-block w-50 mx-auto" style="min-width: 150px;"
+                        data-toggle="modal" data-target="#PurchasingInstructions">
                         Solicitar
                     </button>
                 </div>
             </div>
         </div>
 
+        <a href="quote.html">
+            <h4 class="text-center text-primary mt-3 mb-4">¿Deseas cotizar nuevamente?</h4>
+        </a>
+
+        <!-- Purchasing instructions modal -->
+        <div class="modal fade" id="PurchasingInstructions" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document"
+                style="width: 90%; margin: auto; max-width: 800px;">
+                <div class="modal-content text-dark"
+                    style="border-color: #1BBFC7; border-radius: 15px; border-width: 5px;">
+                    <div class="modal-body text-dark px-4" style="background-color: white; border-radius: 15px;">
+                        <!-- Close modal button -->
+                        <button type="button" class="close mt-1 mr-1" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button><br>
+                        <!-- Modal title -->
+                        <h4 class="mt-2 mb-4 text-center text-secondary">
+                            ¿Cómo programo mi plan de limpieza?
+                        </h4>
+                        <!-- Body -->
+                        <h5>1. Elige una forma de pago</h5>
+                        <p class="text-justify">Puedes pagar tu Plan hasta un día antes del primer servicio. El
+                            <span class="text-medium">pago por anticipado</span>
+                            es lo único que garantiza tu reserva. Por ello recomendamos realizar el pago a tiempo. Una
+                            vez pagado tu Plan, podrás reprogramar o anular servicios (en cuyo caso haremos la
+                            devolución del dinero). Nuestros métodos de pago son:</p>
+                        <!-- Accordion for payment methods-->
+                        <div class="accordion mb-3" id="accordionExample">
+                            <div class="card">
+                                <a class="" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="v" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                        <h6 class="align-middle d-none d-sm-inline">Depósito o Transferencia
+                                            bancaria</h6>
+                                        <img class="d-inline align-middle mb-1"
+                                            src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/bcp.svg"
+                                            alt="Logo del BCP" style="height:20px;">
+                                    </div>
+                                </a>
+                                <script type="text/javascript">
+                                    function copy_to_clipboard(id) {
+
+                                        var textBox = document.getElementById(id);
+                                        textBox.select();
+                                        document.execCommand("copy");
+                                    }
+                                </script>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="mb-0 pb-0">Realiza el depósito o transferencia por <span
+                                                class="text-medium">S/
+                                                410</span> a nuestra
+                                            cuenta de ahorro en soles del BCP.</p>
+                                        <div class="row mt-1 mb-1">
+                                            <div class="col-12 col-sm-5 col-md-6 my-2">
+                                                <h6 class="text-primary">Número de cuenta</h6>
+                                                <div class="input-group-prepend"
+                                                    style="box-shadow: 0px 1px 5px #bbbbbb; border-radius: 4px;">
+                                                    <input class="form-control readonly" type="text" id="bcp_account"
+                                                        placeholder="19424039252071" value="19424039252071" readonly>
+                                                    <button class="readonly" type="button" name="button"
+                                                        onclick="copy_to_clipboard('bcp_account')">
+                                                        <i class="far fa-copy text-primary"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-7 col-md-6 my-2">
+                                                <h6 class="text-primary">CCI</h6>
+                                                <div class="input-group-prepend"
+                                                    style="box-shadow: 0px 1px 5px #bbbbbb; border-radius: 4px;">
+                                                    <input class="form-control readonly" type="text" id="cci"
+                                                        placeholder="00219412403925207195" value="00219412403925207195"
+                                                        readonly>
+                                                    <button class="readonly" type="button" name="button"
+                                                        onclick="copy_to_clipboard('cci')">
+                                                        <i class="far fa-copy text-primary"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">A nombre de Cristian Arens Justo, DNI: 71231546.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="card-header py-2" id="headingTwo">
+                                        <h6 class="d-inline align-middle mr-2 text-dark no-underline">Paga con Yape</h6>
+                                        <img class="d-inline py-0 my-0"
+                                            src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/yape.png"
+                                            alt="Logo de Yape" height="30">
+                                    </div>
+                                </a>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Yapea <span class="text-medium">S/ 410</span> al siguiente número de celular
+                                            a nombre de Cristian Arens Justo.
+                                        </p>
+                                        <h6 class="text-primary">Celular</h6>
+                                        <div class="input-group-prepend"
+                                            style="box-shadow: 0px 1px 5px #bbbbbb; border-radius: 4px;">
+                                            <input class="form-control readonly" type="text" id="cellphone_number"
+                                                placeholder="954186451" value="954186451" readonly>
+                                            <button class="readonly" type="button" name="button"
+                                                onclick="copy_to_clipboard('cellphone_number')">
+                                                <i class="far fa-copy text-primary"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>2. Contáctanos a nuestro whatsapp
+                            <i class="fab fa-whatsapp-square" style="color: #69E182; font-size: 30px;"></i>
+                            +51 923 468 905 </h5>
+                        <p class="mb-3">Envíanos el <span class="text-medium"></span>comprobante de pago, tu <span
+                                class="text-medium">dirección</span> con referencias, el <span
+                                class="text-medium">nombre</span> de la persona que
+                            esperará a nuestro personal, y la <span class="text-medium">fecha y hora</span> para el
+                            primer servicio.</p>
+                        <h5>3. Disfruta de tu tiempo libre</h5>
+                        <p>Una vez recibidos tus datos, coordinaremos con nuestro personal y te enviaremos el nombre de
+                            la persona que irá y sus documento de identidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
 </body>
