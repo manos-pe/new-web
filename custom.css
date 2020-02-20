@@ -342,6 +342,15 @@ img.shake:hover{
     }
 } 
 
+#lunita-tail.wag {
+    animation: wag 100ms ease 0s infinite alternate;
+}
+
+@keyframes wag {
+    0%   { transform: rotate(-2deg) scale(1, 0.95); }
+    100% { transform: rotate(2deg);  }
+}
+
 input.readonly{
     border-width: 0px;
     background-color: #F8F9FA !important;
@@ -352,4 +361,8 @@ button.readonly{
     background-repeat:no-repeat;
     border: none;
     border-radius: 0px 5px 5px 0px;
+}
+
+object{
+    fill: white !important;
 }
