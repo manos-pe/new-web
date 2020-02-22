@@ -94,7 +94,7 @@
                             <a class="nav-link text-secondary mx-2" href="seguridad.html">SEGURIDAD</a>
                         </li>
                         <li class="nav-item my-auto">
-                            <a class="nav-link text-secondary mx-2" href="seguridad.html">COMPROMISO</a>
+                            <a class="nav-link text-secondary mx-2" href="faqs.html">AYUDA</a>
                         </li>
                         <li class="nav-item my-auto">
                             <a class="nav-link mx-2 no-underline" href="client/sign_in.html">
@@ -137,7 +137,7 @@
     </script>
 
     <!-- Main section -->
-    <section class="mx-auto w-100 px-2 pt-3 pb-4" style="margin-top: 80px;">
+    <section class="mx-auto w-100 pt-3 px-4 pb-4" style="margin-top: 80px;">
         <div class="row text-center">
             <div class="col-12 mx-auto">
                 <!-- Dog illustration -->
@@ -150,81 +150,131 @@
             </div>
         </div>
         <div class="col-12 mx-auto text-center">
-            <form class="form text-center" action="">
-                <input type="Search" name="search" id="search" placeholder="Buscar preguntas frecuentes"
-                    autocomplete="off" aria-label="search" class="form-control mx-auto" style="max-width: 400px;">
+            <!-- Formulario de búsqueda -->
+            <form class="form-inline text-center mt-2">
+                <div class="input-group mx-auto">
+                    <input class="form-control" type="search" placeholder="Buscar preguntas frecuentes"
+                        aria-label="Search"
+                        style="border-radius: 5px 0px 0px 5px; border-width: 2px 0px 2px 2px; min-width: 300px;">
+                    <div class="input-group-append">
+                        <button type="button" name="button"
+                            style="border-radius: 0px 5px 5px 0px; border-width: 2px 2px 2px 0px; border-color: #707070; background-color: white;">
+                            <i class="fas fa-primary fa-search mr-2"></i>
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     </section>
 
     <!-- FAQs categories -->
     <section class="mx-auto w-100 px-2 pt-3 pb-4 bg-light">
-        <!-- Pricing cards container -->
         <div class="row w-100 mx-auto" style="max-width: 1000px;">
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+                    <a href="faqs_category.html">
+                        <div class="container p-0"
+                            style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
+                            <img src="https://manos-web.s3-sa-east-1.amazonaws.com/icons/manos_icon_white.svg"
+                                class="w-100 p-4 my-auto">
+                        </div>
+                    </a>
+                    <a href="faqs_category.html">
+                        <h5 class="text-secondary text-center mt-3 mb-3">Sobre Manos, guía</h5>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="my-2">¿Qué es Manos?</p>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="my-2">¿Cuál es nuestra cobertura?</p>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="my-2">¿Cómo puedo contactarlos?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+                    <a href="faqs_category.html">
+                        <div class="container p-0"
+                            style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
+                            <img src="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
+                                class="w-100 p-4 my-auto">
+                        </div>
+                    </a>
+                    <a href="faqs_category.html">
+                        <h5 class="text-secondary text-center mt-3 mb-3">Mi cuenta y perfil</h5>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="mt-1 mb-1">He olvidado mi contraseña, ¿cómo la recupero?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+                    <a href="faqs_category.html">
+                        <div class="container p-0"
+                            style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
+                            <object
+                                data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
+                                type="image/svg+xml" class="w-100 p-4"></object>
+                        </div>
+                    </a>
+                    <a href="faqs_category.html">
+                        <h5 class="text-secondary text-center mt-3 mb-3">Reserva de servicios</h5>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="mt-1 mb-1">¿Cómo solicito un servicio?</p>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="mt-1 mb-1">¿Cómo cancelo un servicio?</p>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="mt-1 mb-1">¿Puedo consultar mis servicios?</p>
+                    </a>
+                    <a class="text-dark" href="faq.html">
+                        <p class="mt-1 mb-1">¿Qué es Manos?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
                     <div class="container p-0"
                         style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
                         <object data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/manos_icon_white.svg"
                             type="image/svg+xml" class="w-100 p-4 my-auto"></object>
                     </div>
-                    <h4 class="text-secondary text-center mt-3">Sobre Manos, guía</h4>
+                    <h5 class="text-secondary text-center mt-3 mb-3">Problemas con el
+                        servicio</h5>
                 </div>
             </div>
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
                     <div class="container p-0"
                         style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
                         <object
                             data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
                             type="image/svg+xml" class="w-100 p-4"></object>
                     </div>
-                    <h4 class="text-secondary text-center mt-3">Mi cuenta y perfil</h4>
+                    <h5 class="text-secondary text-center mt-3 mb-3">Precios y cobros</h5>
                 </div>
             </div>
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
+            <div class="col-11 col-sm-6 col-md-4 mx-auto pb-4">
+                <div class="container my-3 pt-4 px-4 h-100"
+                    style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
                     <div class="container p-0"
                         style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
                         <object
                             data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
                             type="image/svg+xml" class="w-100 p-4"></object>
                     </div>
-                    <h4 class="text-secondary text-center mt-3">Reserva de servicios</h4>
-                </div>
-            </div>
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
-                    <div class="container p-0"
-                        style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
-                        <object data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/manos_icon_white.svg"
-                            type="image/svg+xml" class="w-100 p-4 my-auto"></object>
-                    </div>
-                    <h4 class="text-secondary text-center mt-3">Problemas con el
-                        servicio</h4>
-                </div>
-            </div>
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
-                    <div class="container p-0"
-                        style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
-                        <object
-                            data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
-                            type="image/svg+xml" class="w-100 p-4"></object>
-                    </div>
-                    <h4 class="text-secondary text-center mt-3">Precios y cobros</h4>
-                </div>
-            </div>
-            <div class="col-11 col-sm-6 col-md-4 mx-auto">
-                <div class="container my-3 py-4" style="background-color: white; box-shadow: 0px 0px 10px #cccc;">
-                    <div class="container p-0"
-                        style="background-color: #274A60; border-radius: 50%; width:100px; height: 100px;">
-                        <object
-                            data="https://manos-web.s3-sa-east-1.amazonaws.com/icons/font-awesome/user-solid_%23F3F5F7.svg"
-                            type="image/svg+xml" class="w-100 p-4"></object>
-                    </div>
-                    <h4 class="text-secondary text-center mt-3">Descuentos y
-                        promociones</h4>
+                    <h5 class="text-secondary text-center mt-3 mb-3">Descuentos y
+                        promociones</h5>
                 </div>
             </div>
         </div>

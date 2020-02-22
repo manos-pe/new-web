@@ -10,10 +10,6 @@ body{
     padding-right: constant(safe-area-inset-right);
 }
 
-p{
-    line-height: 1.7;
-}
-
 section.bg-light{
     background-color: #F3F5F7 !important;
 }
